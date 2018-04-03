@@ -1,6 +1,19 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <head>
   <meta charset="utf-8">
+<!--- ウェブ専用表示 JavaScript ver.1 by 甲斐駒電脳工房 --->
+<SCRIPT LANGUAGE="JavaScript">
+  function WebOnly(msg, dmy){
+    var str = document.location.protocol;
+    str = str.toLowerCase();
+    if (str == 'file:'){
+      document.write(dmy);
+    }else{
+      document.write(msg);
+    }
+  }
+</SCRIPT>
+
 </head>
 <body>
 
@@ -549,6 +562,14 @@ var nen = 1994;
 
 
 </table><h3>
+
+
+あなたは
+<!--- ウェブ専用表示 JavaScript の呼び出し --->
+<SCRIPT LANGUAGE="JavaScript">
+  WebOnly('<IMG SRC="counter.gif">', '[アクセスカウンタ]');
+</SCRIPT>
+人目のお客様です。<P>
 </body>
 
 </html>
